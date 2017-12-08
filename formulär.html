@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="formulär.css">
+	<title>Felix Formulär</title>
+</head>
+<body>
+
+<main>
+	
+	<form action="http://172.20.1.15/kommun/anslagstavla" method="post">
+            <label for="title" class="title">Title </label>
+            <p id="titleStjärna">*</p>
+            <input type="text" id="title" name="title" required>
+
+            <label for="title" class="authority">Organ </label>
+            <p id="organStjärna">*</p>
+            <input type="text" id="authority" name="authority" required>
+
+            <label for="title" class="repository">Förvaringsplats </label>
+            <p id="förvaringsplatsStjärna">*</p>
+            <input type="text" id="repository" name="repository" required>
+
+            <label for="stub" class="stub">Beskrivning </label>
+            <p id="beskrivningStjärna">*</p>
+            <textarea name="stub" id="stub"></textarea>
+
+            <label for="pubdate" class="pubdate">Publiceringsdatum </label>
+            <input type="date" id="pubdate" name="pubdate" required>
+
+            <label for="meetingdate" class="meetingdate">Sammanträdesdatum </label>
+            <input type="date" id="meetingdate" name="meetingdate" required>
+
+            <input type="submit" name="submit" id="submit">
+
+    </form>
+
+
+</main>
+
+
+
+
+</body>
+</html>
